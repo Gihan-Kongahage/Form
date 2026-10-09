@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple form</title>
+    <link rel="icon" href="assets/form.svg" type="svg/x-icon">
+    <style>
+        body {
+            text-align: center;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffbe98;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            margin: 10px;
+        }
+
+        legend {
+            font-style: italic;
+        }
+
+        textarea {
+            vertical-align: top;
+        }
+
+        select {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            font-size: large;
+        }
+
+        .feedbacks {
+            padding: 15px;
+        }
+
+        .biodata {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hotel California</h1>
+    <p>We'll always be at your service.</p>
+    <br>
+    <form action="">
+        <fieldset class="feedbacks">
+            <legend>Personal Info</legend>
+            <label for="name">Your Name*: </label>
+            <input type="text" id="name" name="info" required placeholder="Your name" class="biodata">
+            <br>
+            <label for="email">Your Email*: </label>
+            <input type="email" id="email" name="info" required placeholder="Youremail@email.com" class="biodata">
+            <br>
+            <label for="age">Your Age: </label>
+            <input type="number" name="info" id="age" min="18" max="100" class="biodata">
+        </fieldset>
+        <fieldset class="feedbacks">
+            <legend>Is this your fist stay ?</legend>
+            <input type="radio" name="first-stay" id="yes" value="Y" checked aria-checked="true">
+            <label for="first-stay">Yes</label>
+            <input type="radio" id="no" name="first-stay" value="N">
+            <label for="first-stay">No</label>
+        </fieldset>
+        <fieldset class="feedbacks">
+            <legend>What services did you enjoy</legend>
+            <input type="checkbox" name="services" id="spa" checked>
+            <label for="spa">Eden Spa</label>
+            <input type="checkbox" name="services" id="games">
+            <label for="games">Game Rooms</label>
+            <input type="checkbox" name="services" id="pool">
+            <label for="pool">Infinity Pool</label>
+            <input type="checkbox" name="services" id="bar">
+            <label for="bar">Cocktail Bar</label>
+        </fieldset>
+        <fieldset class="feedbacks">
+            <legend>Rate Us</legend>
+            <label for="service">How was the service?</label>
+            <select name="service" id="service">
+                <option value="B">Bad</option>
+                <option value="M">Moderate</option>
+                <option value="E" selected>Excellent</option>
+            </select>
+            <br>
+            <label for="food">How was the food?</label>
+            <select name="food" id="food">
+                <option value="B">Bad</option>
+                <option value="M">Moderate</option>
+                <option value="E" selected>Excellent</option>
+            </select>
+        </fieldset>
+        <label for="else">Write Us: </label>
+        <textarea name="else" id="else" rows="5" cols="54" placeholder="Your thoughts..."></textarea>
+        <br>
+        <button>Submit</button>
+
+    </form>
+</body>
+
+</html>
