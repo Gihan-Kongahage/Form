@@ -3,9 +3,8 @@
 A simple form with little bit of internal CSS  
 
 ## Technologies used 
-
--HTML5
--CSS3
+- HTML5
+- CSS3
 
 ## Purpose
 
